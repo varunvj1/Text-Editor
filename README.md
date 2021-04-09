@@ -1,5 +1,5 @@
 # Text Editor
-This is a basic text editor, where we can do basic formating of the text.
+This is a text editor, where we can do basic formating of the text.
 
 ### Text formating features available
 - **Bold**
