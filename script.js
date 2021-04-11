@@ -1,10 +1,10 @@
 //Update the text in the output textArea
-function updateText() {
+updateText = () => {
   let input = document.getElementById("text-input").value;
   document.getElementById("text-output").innerText = input;
 }
 
-function makeBold(elem) {
+makeBold = (elem) => {
   //elem is the Bold button element
   //Toggle the .active class (Bootstrap class)
   elem.classList.toggle("active");
@@ -13,12 +13,12 @@ function makeBold(elem) {
   document.getElementById("text-output").classList.toggle("bold");
 }
 
-function makeItalic(elem) {
+makeItalic = (elem) => {
   elem.classList.toggle("active");
   document.getElementById("text-output").classList.toggle("italic");
 }
 
-function makeUnderline(elem) {
+makeUnderline = (elem) => {
   elem.classList.toggle("active");
   let output = document.getElementById("text-output");
   if (output.classList.contains("underline")) {
@@ -28,16 +28,16 @@ function makeUnderline(elem) {
   }
 }
 
-function alignText(elem, alignType) {
+alignText = (elem, alignType) => {
   let output = document.getElementById("text-output");
   output.style.textAlign = alignType;
 
   /* If one align button is active, make other align buttons inactive */
   //All the align buttons have class name as ALIGN
   let buttonList = document.getElementsByClassName("align");
-  for (let i = 0; i < buttonList.length; i++) {
+  for (let button of buttonList) {
     //Remove .active class from all align buttons
-    buttonList[i].classList.remove("active");
+    button.classList.remove("active");
   }
 
   //Make the seleceted align button active
