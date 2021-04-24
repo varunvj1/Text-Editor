@@ -1,7 +1,7 @@
 # Text Editor
 This is a text editor, where we can do basic formatting of the text.
 
-### Text formating features available
+### Text Formating Features Available:
 - **Bold**
 - *Italic*
 - <ins> Underline </ins>
