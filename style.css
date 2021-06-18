@@ -1,18 +1,31 @@
+body {
+  margin-top: 8%;
+}
 #text-output {
-  min-height: 200px;
+  min-height: 250px;
   border-radius: 3px;
   padding: 10px;
   word-wrap: break-word;
   text-align: left;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(10, 10, 10, 0.4);
+  /* box-shadow: 5px 5px 5px 0px rgba(255, 0, 0, 0.3); */
 }
 
 #text-input {
-  min-height: 200px;
+  min-height: 250px;
+  border: 1px solid rgba(0, 0, 255, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(10, 10, 10, 0.4);
+  /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 255, 0.3); */
 }
 
 .editor .col {
   max-width: 50%;
   flex-basis: 50%;
+}
+
+.row .col button {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .bold {
@@ -27,3 +40,7 @@
   text-decoration: underline;
 }
 
+.active {
+  font-weight: 500;
+  /* background-image: linear-gradient(90deg, rgba(255, 255, 0, 0.5), lightblue); */
+}
